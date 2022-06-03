@@ -1,3 +1,4 @@
+
 #root {
   color: white;
   text-shadow: 2px 2px #494444;
@@ -13,7 +14,6 @@ body{
 .title{
   font-size: 3rem;
   color: gold;
-  /* background-color: white; */
   margin: 1rem 0 0 2rem
 }
 
@@ -26,10 +26,11 @@ p{
 }
 
 .cards-container{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 2rem;
 margin:1rem 2rem 1rem 2rem;
+  --auto-grid-min-size: 13rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
 }
 
 .card{

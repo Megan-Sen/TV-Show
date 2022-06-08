@@ -5,39 +5,63 @@
 }
 
 body{
-  background-image: url("watarun2.png");
+  /* background-image: url("watarun2.png"); */
+  background-color: rgb(22, 22, 22);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .title{
   font-size: 3rem;
-  color: gold;
-  margin: 1rem 0 0 2rem
+  /* color: gold; */
+  color: rgb(233, 217, 125);
+  margin: 1rem 0 0 1rem
+}
+
+#searchInput{
+  margin: 2rem 2rem 0 0;
+  padding:0.3rem 2rem 0.3rem 0.2rem;
+  font-size: 1rem;
+}
+
+#countDisplay{
+  margin-right: 3rem;
+  font-size: 1rem;
 }
 
 h1{
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 p{
   font-size:1rem;
+  display: none;
 }
 
 .cards-container{
 margin:1rem 2rem 1rem 2rem;
-  --auto-grid-min-size: 13rem;
+  --auto-grid-min-size: 15rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .card{
-background-color:rgba(61, 61, 61, 0.5);
- border:1px solid rgb(91, 89, 92);
+/* background-color:rgba(61, 61, 61, 0.5); */
+background-color: rgb(15, 15, 15);
+ border:1px solid rgb(76, 74, 77);
+  box-shadow: 5px 5px 10px #616060;
  border-radius: 10px;
  display: flex;
  flex-direction: column;
- padding: 0 2rem 0 2rem;
+ padding: 0 1rem 1rem 1rem;
+ white-space: nowrap;
+	overflow: hidden;
 }

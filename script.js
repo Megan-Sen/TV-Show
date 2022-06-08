@@ -1,4 +1,11 @@
+
 function setup() {
+
+  document.getElementById
+
+
+
+
   const episodes = getAllEpisodes();
   makePageForEpisodes(episodes);
 }
@@ -7,15 +14,7 @@ function makePageForEpisodes(episodeList) {
   const container = document.getElementById("episodes");
 
   //Nav -- Title and Search bar
-  const navConrainer = document.createElement("div");
-  navConrainer.classList.add("nav-container");
 
-  const title = document.createElement("div");
-  title.classList.add("title");
-  title.textContent = 'TV SHOW';
-
-  container.appendChild(navConrainer);
-  navConrainer.appendChild(title);
 
 //-------------------------------------
 // Cards

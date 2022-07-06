@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 #root {
   color: white;
   text-shadow: 2px 2px #494444;
@@ -13,9 +15,12 @@ body{
 }
 
 .nav-container{
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
-
+  background-color: black;
+  padding-bottom: 0.5rem;
 }
 
 .title{
@@ -29,22 +34,27 @@ body{
   margin: 2rem 2rem 0 0;
   padding:0.3rem 2rem 0.3rem 0.2rem;
   font-size: 1rem;
+  background-color: rgb(212, 211, 209);
 }
 
 #countDisplay{
   margin-right: 3rem;
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h2{
   font-size: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 p{
   font-size:1rem;
   display: none;
 }
-
+#episodes{
+  padding-top:5rem;
+}
 .cards-container{
 margin:1rem 2rem 1rem 2rem;
   --auto-grid-min-size: 15rem;
@@ -64,4 +74,35 @@ background-color: rgb(15, 15, 15);
  padding: 0 1rem 1rem 1rem;
  white-space: nowrap;
 	overflow: hidden;
+}
+
+@media (max-width: 500px){
+  .nav-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background-color:black;
+    margin-left: 1rem;
+  }
+
+  .title{
+    margin-left: 0;
+  }
+ 
+  #controls{
+    display: flex;
+    flex-direction: column;
+  }
+  #searchInput{
+      margin-top: 0.5rem;
+  }
+
+  span{
+    margin-top: 1rem;;
+  }
+
+  #episodes{
+    padding-top: 10rem;;
+  }
 }
